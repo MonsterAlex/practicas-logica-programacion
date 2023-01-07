@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+	
+	<h1>Recetas de Armanado</h1>
+
+	<script>
+		
+		var ingredientes = [];
+		var cantidad = parseInt(prompt("¿Cuantos ingredientes vas a añadir?"));
+		var contador = 1;
+
+		while(contador <= cantidad)
+		{
+
+			var ingrediente = prompt("Informe el ingrediente " + contador);
+			var ingredienteRepetido = false;
+
+			for(var posicionCadena = 0; posicionCadena < ingredientes.length; posicionCadena++)
+			{
+
+				if(ingredientes[posicionCadena] == ingrediente)
+				{
+
+					ingredienteRepetido = true;
+					alert("El ingrediente " + ingrediente + " a sido repetido");
+					break;
+
+				}	
+
+			}
+
+			if(ingredienteRepetido == false)
+			{
+
+				ingredientes.push(ingrediente);
+				contador++;
+
+			}
+
+		}
+
+		console.log(ingredientes)
+
+	</script>

@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+	<script>
+
+		function mostrarMensaje(texto) 
+		{
+			
+			document.write("<h1>"+ texto + "</h1>");
+
+		}
+		
+		var inicioDeSesionRegistrado = "alura";
+		var contrasenhaRegistrada = "alura321";
+
+		var intentos = 3;
+		var intentoActual = 1;
+
+		while(intentoActual <= intentos)
+		{
+			var inicioDeSesionIngresado = prompt("Ingresa su usuario");
+			var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+			if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) 
+			{
+
+				alert("Bienvenido al sistema " +inicioDeSesionIngresado);
+				//intentoActual=intentos; //de esta forma tambien se puede hacer que se finalice la condicion.
+				mostrarMensaje("Bienvenido de vuelta a la pagina: " +inicioDeSesionIngresado);
+				break;
+
+			} 
+			else 
+			{
+				if (intentoActual == 3) 
+				{
+
+					alert("¡¡ Agotaste el numero de intentos !!")
+					mostrarMensaje("No puedes acceder a la pagina");
+
+				} 
+				else 
+				{
+
+					alert("Inicio de sesión invalido. favor intente de nuevo");
+
+				}
+
+			}
+
+			intentoActual++;
+			
+		}
+
+	</script>

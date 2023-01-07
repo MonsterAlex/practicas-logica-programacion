@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+	
+	<h1>PROGRAMA</h1>
+
+	<script>
+		
+		function saltarlinea()
+		{
+			
+			document.write("<br>");
+			document.write("<br>");
+			document.write("<br>");
+
+		}; //aqui se crea la funcion que se usa mas adelante
+
+		function imprimir(frase) //la palabra frase puede ser cualquier cosa que eligamos, esto solo sera para darle a saber al codigo que se espera hacer dentro de la funcion
+		{
+
+			document.write(frase);
+			saltarlinea(); //se puede llamar otra funcion dentro de otra funsion, esto ara que despues de imprimir se dara un salto de linea
+
+		}; //se crea una nueva forma para mostrar los mensajes y asi evitar usar el document.write
+
+		var anho = 2025;
+		//var saltolinea = "<br><br><br>"; //una forma de facilitar el salto de linea en un document.write
+
+		imprimir("hola amigos");
+		
+		imprimir("Juan tiene: " + (anho - 2000) + " Años.");
+
+		//saltarlinea(); //esto es una funcion
+
+		imprimir("Pedro tiene: " + (anho - 1995) + " Años.");
+
+		anho = 2030;
+
+		//document.write(saltolinea);
+
+		imprimir("Carlos tiene: " + (anho - 2005) + " Años.");
+
+	</script>

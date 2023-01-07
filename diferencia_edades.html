@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+	
+	<h1>Calculo De Diferencia de Edades</h1>
+
+
+	<script>
+		
+		function saltolinea() 
+		{
+			document.write("<br>");
+		};
+
+		function imprimir(texto)
+		{
+			document.write("<h3>" + texto + "</h3>");
+			saltolinea();
+		};
+		function mnsEmergente(mensaje)
+		{
+			alert(mensaje);
+		};
+
+		var miEdad = 28;
+		var suEdad = 22;
+		var diferenciaEdad = (miEdad - suEdad);
+
+		mnsEmergente("Este es un programa que muestra la diferencia de edades");
+
+		imprimir("Mi edad es de: " + miEdad + "Años.");
+		imprimir("La edad de mi hermana es de: " + suEdad + " Años.")
+		imprimir("Y la diferencia de edades es de: " + diferenciaEdad + " Años.");
+
+	</script>
